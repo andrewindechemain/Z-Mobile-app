@@ -80,6 +80,10 @@ bash
   <h2>CI/CD tools</h2>
   <p>1.Circle CI</p> 
   <p>3.ESLINT</p>
+  <h2>Testing</h2>
+  <p>1.Jest</p> 
+  <p>2.React  Test Renderer</p> 
+  <p>3.Detox</p>
 </p>
 <div>
 
