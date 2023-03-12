@@ -1,10 +1,9 @@
-version: 1.0
-
+version: 2.1
 orbs:
   node: circleci/node@5.0.2
-
-jobs:
-  - node/test:
-      version: '18.15.0'
-      pkg-manager: npm
+workflows:
+  jobs:
+    - node/test:
+        version: '18.15.0'
+        pkg-manager: npm
           
