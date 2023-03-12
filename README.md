@@ -9,10 +9,9 @@ Align main heading to the center of the page
 | 1.Git                 | Version Control       | [Repo];                                                         |
 | 2.Expo Go             | Environment           | [Mode]; [Production];                        |
 | 3.Babel/JavaScript-Core| Transpile           | [Transpile];[lexer]; [parser];[start-up interpreter (LLInt)]; [baseline JIT],[DFG],[FTL]                                                  |
-| 4.React  Native       | Component Mobile      | [Hot Loading]; [Lazy Loading]; [Fast Refresh]; |
 | 5.NPM,Node JS         | Node                  | [Package ]; 
-| 6.Metro             | Bundler                 | [Development];  
-| 7.Jest,React test Rendererer| [Testing];[E2E]                |                                    
+| 6.Metro               | Bundler                 | [Development];  
+| 7.Jest,React test Rendererer,Detox|    Testing  | [Testing];[E2E]                         
 <div align="left">
 <h1>React Native Configuration for Zamara Mobile Application </h1> The ReadME documents details about configuring a React Native App built using ReactNative and Expo
 
