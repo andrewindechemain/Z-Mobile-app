@@ -18,7 +18,7 @@ Align main heading to the center of the page
 <!-- Badges -->
 <p>
 <h1> Description</h1>
-The Aim of the project is to build and configure a mobile App built usingReact Native App and Expo , A Dummy Json, A rest CRUD API,SMTP and SOAP WEB API that authenticates Users, adds,deletes users and informs them of updates to their profile.
+The Aim of the project is to build and configure a mobile App built using React Native App and Expo , A Dummy Json, A rest CRUD API,SMTP and SOAP WEB API that authenticates Users, adds,deletes users and informs them of updates to their profile.
 
 <!-- Installation -->
 ### :gear:<h2>Installation</h2>
