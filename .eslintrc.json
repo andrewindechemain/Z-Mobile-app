@@ -6,7 +6,9 @@
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "airbnb"
+        "airbnb",
+        "prettier",
+        "prettier/react"
     ],
     "overrides": [
     ],
