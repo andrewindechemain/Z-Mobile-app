@@ -7,7 +7,7 @@ Align main heading to the center of the page
 | Tool                | Description                    | Tags for tools used                                                                                               |
 | ------------------- | ------------------------------ | ---------------------------------------------------------------------------------------------------- |
 | 1.Git                 | Version Control       | [Repo];                                                         |
-| 2.Expo Go             | Environment           | [Mode]; [Production];                        |
+| 2.Expo Go             | Environment           | [Mode]; [Production]; [packages];[Development]                    |
 | 3.Babel/JavaScript-Core| Transpile           | [Transpile];[lexer]; [parser];[start-up interpreter (LLInt)]; [baseline JIT],[DFG],[FTL]                                                  |
 | 5.NPM,Node JS         | Node                  | [Package ]; 
 | 6.Metro               | Bundler                 | [Development];  
@@ -26,7 +26,7 @@ The Aim of the project is to build and configure a mobile App built using React 
 1.Install Learning-Projects using Yarn Install
 
 bash
-  <p>1.Yarn install</p>
+  <p>1.npm install</p>
   <p>2.cd ZAMARAMOBILEAPP</p>
   
 <!-- Run Locally -->
@@ -37,10 +37,10 @@ bash
 
   1.cd ZAMARAMOBILE APP
 
-<!-- Installing dependencies using Yarn -->
+<!-- Installing dependencies using npm -->
 <h2>Installing dependencies</h2>
 
-  1.Yarn install
+  1.npm install
 
 <!-- Running the Application in Development Mode -->
 <h2>Running Development Server</h2>
@@ -52,17 +52,21 @@ bash
 
   (Edit port number if current port does not work)
 
+<!-- Running Device Environments -->
+- npm run android
+- npm run ios # you need to use macOS to build the iOS project - use the Expo app if you need to do iOS development without a Mac
+- npm run web
+
 <!-- Running Tests on the Application -->
 <h2>Running Tests</h2>
 
-  1.Yarn run test
+  1.npm run test
 
 <!-- Linting the Application -->
 <h2>Linting the App</h2>
 
-  1.Yarn run lint
-  2.Yarn run flow
-  3.Yarn run lint
+  1.npm run lint
+  2.npm run flow
 
 <!-- Running the Application Development Mode -->
 <h2>Running Development Server</h2>
@@ -73,7 +77,7 @@ bash
   
 <h2>Technologies Used in the Project</h2>
 <br>
-  <p>1.Yarn:For Dependency Management</p>
+  <p>1.Npm:For Dependency Management</p>
   <p>2.Figma:For UI Design</p>
   <p>3.Babel: to transpile JSX to JavaScript so that clients/browsers can compile/read the code</p>
   <p>4.Metro:Bundle codes, none-code assets such as images,fonts so as to minify,lazy-load,perform testing and Hot-Loading replacement</p>
