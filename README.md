@@ -44,18 +44,17 @@ bash
 
 <!-- Running the Application in Development Mode -->
 <h2>Running Development Server</h2>
-  1.npx zamara-mobile-app ZAMARAMOBILEAPP
 
-  1.NPX start
+  1.npx expo start
 
   2. open http://127.0.0.1:8080/ on browser to view website
 
   (Edit port number if current port does not work)
 
 <!-- Running Device Environments -->
-- npm run android
-- npm run ios # you need to use macOS to build the iOS project - use the Expo app if you need to do iOS development without a Mac
-- npm run web
+- npm expo start --android
+- npm expo start --ios # you need to use macOS to build the iOS project - use the Expo app if you need to do iOS development without a Mac
+- npm expo start --web
 
 <!-- Running Tests on the Application -->
 <h2>Running Tests</h2>
