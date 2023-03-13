@@ -5,7 +5,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons/faUser';
 import LoginDashboard from '../components/LoginDashboard';
 import { useFonts } from 'expo-font';
 
-export default function app(){
+export default function Login(){
   const [fontsLoaded] = useFonts({
     'TsukimiRounded-Medium': require('../assets/fonts/ttf/TsukimiRounded-Medium.ttf'),
   });

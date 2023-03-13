@@ -5,7 +5,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 import { faLock } from '@fortawesome/free-solid-svg-icons/faLock';
 import { useFonts } from 'expo-font';
 
-export default function app(){
+export default function LoginDashboard(){
     const [fontsLoaded] = useFonts({
         'TsukimiRounded-Medium': require('../assets/fonts/ttf/TsukimiRounded-Medium.ttf'),
       });
