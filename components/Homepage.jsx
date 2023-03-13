@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View, Image } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons/faUser';
+import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons/faBarsStaggered';
 import HomepageDashboard from './HomepageDashboard';
 import { useFonts } from 'expo-font';
 
@@ -14,7 +14,7 @@ export default function Homepage(){
         <View style={styles.container}>
         <Image source={require('../assets/logo.png')} style={styles.imgstyle} />
         <br/>
-        <FontAwesomeIcon icon={ faUser } style={styles.fontawesome} color={ 'white' } size={ 30 } />
+        <FontAwesomeIcon icon={ faBarsStaggered } style={styles.fontawesome} color={ 'white' } size={ 34 } />
         <h3 style={{fontFamily: 'TsukimiRounded-medium',paddingLeft:'1em', paddingTop:'2em',position:'absolute', top:'0px',}} >Home Page</h3>
         <p style={{fontFamily: 'TsukimiRounded-medium', fontSize:12,fontWeight:'bold', paddingTop:'4em',paddingLeft:'4em'}} >Welcome Stephen Amimo</p>
         <br/><br/><br/>
@@ -43,7 +43,10 @@ const styles = StyleSheet.create({
       },
       fontawesome: {
         paddingTop: '-1em',
-        paddingRight: '20em'
+        paddingRight: '17em'
       },
+      dropdown: {
+        position:'left:0'
+      }
   });
   
