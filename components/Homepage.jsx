@@ -2,10 +2,10 @@ import React from "react";
 import { StyleSheet, Text, View, Image } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons/faUser';
-import LoginDashboard from '../components/LoginDashboard';
+import HomepageDashboard from './HomepageDashboard';
 import { useFonts } from 'expo-font';
 
-export default function Login(){
+export default function Homepage(){
   const [fontsLoaded] = useFonts({
     'TsukimiRounded-Medium': require('../assets/fonts/ttf/TsukimiRounded-Medium.ttf'),
   });
@@ -14,11 +14,11 @@ export default function Login(){
         <View style={styles.container}>
         <Image source={require('../assets/logo.png')} style={styles.imgstyle} />
         <br/>
-        <FontAwesomeIcon icon={ faUser } style={styles.fontawesome} color={ 'white' } size={ 50 } />
-        <h2 style={{fontFamily: 'TsukimiRounded-medium'}} >Welcome</h2>
-        <p style={{fontFamily: 'TsukimiRounded-medium'}} >Log-in to continue</p>
-        <br/>
-        <LoginDashboard/>
+        <FontAwesomeIcon icon={ faUser } style={styles.fontawesome} color={ 'white' } size={ 30 } />
+        <h3 style={{fontFamily: 'TsukimiRounded-medium',paddingLeft:'1em', paddingTop:'2em',position:'absolute', top:'0px',}} >Home Page</h3>
+        <p style={{fontFamily: 'TsukimiRounded-medium', fontSize:12,fontWeight:'bold', paddingTop:'4em',paddingLeft:'4em'}} >Welcome Stephen Amimo</p>
+        <br/><br/><br/>
+        <HomepageDashboard/>
         </View>
         </>
     );
@@ -37,12 +37,13 @@ const styles = StyleSheet.create({
         resizeMode:'contain',
         position:'absolute', 
         top:'0px',
-        marginTop:'-4em',
-        height:'14em',
-        width:'14em',
+        marginTop:'-3em',
+        height:'10em',
+        width:'8em',
       },
       fontawesome: {
-        paddingTop: '8em'
+        paddingTop: '-1em',
+        paddingRight: '20em'
       },
   });
   

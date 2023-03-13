@@ -35,7 +35,7 @@ bash
 <!-- Going into the project Directory/Folder -->
 <h2>Go to the project directory</h2>
 
-  1.cd ZAMARAMOBILE APP
+  1.cd zamara-mobile-app
 
 <!-- Installing dependencies using npm -->
 <h2>Installing dependencies</h2>
@@ -45,7 +45,7 @@ bash
 <!-- Running the Application in Development Mode -->
 <h2>Running Development Server</h2>
 
-  1.npx expo start
+  1.npx expo start or npm start
 
   2. open http://127.0.0.1:8080/ on browser to view website
 
