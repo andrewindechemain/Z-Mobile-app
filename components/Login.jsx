@@ -2,17 +2,21 @@ import React from "react";
 import { StyleSheet, Text, View, Image } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons/faUser';
-import LoginDashboard from '../components/LoginDashboard'
+import LoginDashboard from '../components/LoginDashboard';
+import { useFonts } from 'expo-font';
 
 export default function app(){
+  const [fontsLoaded] = useFonts({
+    'TsukimiRounded-Medium': require('../assets/fonts/ttf/TsukimiRounded-Medium.ttf'),
+  });
     return(
         <>  
         <View style={styles.container}>
         <Image source={require('../assets/logo.png')} style={styles.imgstyle} />
         <br/>
         <FontAwesomeIcon icon={ faUser } style={styles.fontawesome} color={ 'white' } size={ 50 } />
-        <h2 >Welcome</h2>
-        <h3>Log-in to continue</h3>
+        <h2 style={{fontFamily: 'TsukimiRounded-medium'}} >Welcome</h2>
+        <p style={{fontFamily: 'TsukimiRounded-medium'}} >Log-in to continue</p>
         <br/>
         <LoginDashboard/>
         </View>
@@ -20,9 +24,6 @@ export default function app(){
     );
 }
 const styles = StyleSheet.create({
-    body: {
-        fontFamily: 'TsukimRounded-Medium',
-    },
     container: {
       flex: 1,
       width:'100%',

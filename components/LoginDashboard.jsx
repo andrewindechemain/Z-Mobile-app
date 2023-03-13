@@ -3,8 +3,12 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 import { faLock } from '@fortawesome/free-solid-svg-icons/faLock';
+import { useFonts } from 'expo-font';
 
 export default function app(){
+    const [fontsLoaded] = useFonts({
+        'TsukimiRounded-Medium': require('../assets/fonts/ttf/TsukimiRounded-Medium.ttf'),
+      });
     return(
         <>  
         <View style={styles.container}>
@@ -21,9 +25,6 @@ export default function app(){
 }
 
 const styles = StyleSheet.create({
-    body: {
-        fontFamily: 'TsukimRounded-Medium',
-    },
     container: {
       flex: 1,
       width:'93%',
@@ -42,14 +43,16 @@ const styles = StyleSheet.create({
         fontWeight:'bold',
         marginRight: 20,
         marginTop: '2em', 
-        marginBottom: '3em'
+        marginBottom: '3em',
+        fontFamily: 'TsukimiRounded-medium',
     },
     text:{
         marginLeft: '8em',
         marginTop: '4em',
         marginBottom: '-4em',
         fontWeight:'bold',
-        fontSize:18
+        fontSize:18,
+        fontFamily: 'TsukimiRounded-medium',
     },
     fontawesome:{
         marginLeft: '1em',
