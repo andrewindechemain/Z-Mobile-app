@@ -1,9 +1,8 @@
 import React from "react";
 import { StyleSheet, Text, View, Image } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons/faBarsStaggered';
 import ContinentsDashboard from './ContinentsDashboard';
 import { useFonts } from 'expo-font';
+import Menubar from './Menubar';
 
 export default function StaffPage(){
   const [fontsLoaded] = useFonts({
@@ -14,15 +13,8 @@ export default function StaffPage(){
         <View style={styles.container}>
         <Image source={require('../assets/logo.png')} style={styles.imgstyle} />
         <br/>
-        <FontAwesomeIcon icon={ faBarsStaggered } style={styles.fontawesome} color={ 'white' } size={ 34 } />
-        <h3 style={{fontFamily: 'TsukimiRounded-medium',paddingLeft:'1em', paddingTop:'2.5em',position:'absolute', top:'0px',}} >Continents</h3>
         <br/>
-        <Image source={require('../assets/continent.png')} style={{resizeMode:'contain',position:'absolute', top:'2em',
-        marginTop:'0em',
-        marginLeft:'3em',
-        height:'50%',
-        width:'50%',}} />
-        <p style={{fontFamily: 'TsukimiRounded-medium', fontSize:12,fontWeight:'bold', paddingTop:'19em' ,paddingLeft:'2em'}} >A View of Continents</p>
+        <Menubar />
         <br/><br/><br/>
         <ContinentsDashboard/>
         </View>

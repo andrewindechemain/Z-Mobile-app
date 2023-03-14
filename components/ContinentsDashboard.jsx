@@ -10,6 +10,7 @@ export default function StaffPageDashboard(){
     return(
         <>  
       <View style={styles.container}>
+      <p style={{fontFamily: 'TsukimiRounded-medium',color:"black", fontSize:12,fontWeight:'bold', paddingTop:'0.5em',paddingLeft:'12em'}} >Continents</p>
         <DataTable.Header style={{ fontWeight:'bold',fontFamily: 'TsukimiRounded-medium', fontSize:3,}}>
           <DataTable.Title>CODE</DataTable.Title>
           <DataTable.Title>CONTINENTS</DataTable.Title>
