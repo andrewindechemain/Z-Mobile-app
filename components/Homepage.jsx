@@ -9,6 +9,7 @@ export default function Homepage(){
   const [fontsLoaded] = useFonts({
     'TsukimiRounded-Medium': require('../assets/fonts/ttf/TsukimiRounded-Medium.ttf'),
   });
+  
     return(
         <>  
         <View style={styles.container}>
