@@ -16,7 +16,7 @@ export default function StaffPage(){
         <br/>
         <FontAwesomeIcon icon={ faBarsStaggered } style={styles.fontawesome} color={ 'white' } size={ 34 } />
         <h3 style={{fontFamily: 'TsukimiRounded-medium',paddingLeft:'1em', paddingTop:'2em',position:'absolute', top:'0px',}} >Staff Page</h3>
-        <p style={{fontFamily: 'TsukimiRounded-medium', fontSize:12,fontWeight:'bold', paddingTop:'4em',paddingLeft:'4em'}} >View Staff Details</p>
+        <p style={{fontFamily: 'TsukimiRounded-medium', fontSize:12,fontWeight:'bold', paddingTop:'4em',paddingLeft:'2em'}} >Staff Details</p>
         <br/><br/><br/>
         <StaffPageDashboard/>
         </View>
