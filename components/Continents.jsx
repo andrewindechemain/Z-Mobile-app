@@ -1,23 +1,22 @@
 import React from "react";
 import { StyleSheet, Text, View, Image } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import HomepageDashboard from './HomepageDashboard';
+import ContinentsDashboard from './ContinentsDashboard';
 import { useFonts } from 'expo-font';
 import Menubar from './Menubar';
 
-export default function Homepage(){
+export default function StaffPage(){
   const [fontsLoaded] = useFonts({
     'TsukimiRounded-Medium': require('../assets/fonts/ttf/TsukimiRounded-Medium.ttf'),
   });
-  
     return(
         <>  
         <View style={styles.container}>
         <Image source={require('../assets/logo.png')} style={styles.imgstyle} />
-        <Menubar />
         <br/>
-        <p style={{fontFamily: 'TsukimiRounded-medium', fontSize:16,fontWeight:'bold', paddingTop:'1em',paddingLeft:'1em'}} >Welcome Stephen Amimo</p>
-        <HomepageDashboard/>
+        <br/>
+        <Menubar />
+        <br/><br/><br/>
+        <ContinentsDashboard/>
         </View>
         </>
     );
@@ -46,10 +45,6 @@ const styles = StyleSheet.create({
       },
       dropdown: {
         position:'left:0'
-      },
-      menu: {
-        maxWidth: '2em',
-        maxHeight: '2em',
       }
   });
   

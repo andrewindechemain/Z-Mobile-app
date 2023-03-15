@@ -10,42 +10,27 @@ export default function StaffPageDashboard(){
     return(
         <>  
       <View style={styles.container}>
-        <p style={{fontFamily: 'TsukimiRounded-medium',color:"black", fontSize:12,fontWeight:'bold', paddingTop:'0.5em',paddingLeft:'12em'}} >Staff Details</p>
+      <p style={{fontFamily: 'TsukimiRounded-medium',color:"black", fontSize:12,fontWeight:'bold', paddingTop:'0.5em',paddingLeft:'12em'}} >Continents</p>
         <DataTable.Header style={{ fontWeight:'bold',fontFamily: 'TsukimiRounded-medium', fontSize:3,}}>
-          <DataTable.Title>STAFF NUMBER</DataTable.Title>
-          <DataTable.Title>NAME</DataTable.Title>
-          <DataTable.Title>EMAIL</DataTable.Title>
-          <DataTable.Title>DEPARTMENT</DataTable.Title>
-          <DataTable.Title>SALARY</DataTable.Title>
+          <DataTable.Title>CODE</DataTable.Title>
+          <DataTable.Title>CONTINENTS</DataTable.Title>
         </DataTable.Header>
         <DataTable.Row>
           <DataTable.Cell>ZAAC001</DataTable.Cell>
-          <DataTable.Cell>John Doe</DataTable.Cell>
-          <DataTable.Cell>jd@zamara.co.ke</DataTable.Cell>
-          <DataTable.Cell>ICT</DataTable.Cell>
-          <DataTable.Cell>50000</DataTable.Cell>
+          <DataTable.Cell>AFRICA</DataTable.Cell>
         </DataTable.Row>
 
         <DataTable.Row>
-          <DataTable.Cell>ZARIB001</DataTable.Cell>
-          <DataTable.Cell>Mary jane</DataTable.Cell>
-          <DataTable.Cell>mj@zamara.co.ke</DataTable.Cell>
-          <DataTable.Cell>ICT</DataTable.Cell>
-          <DataTable.Cell>60000</DataTable.Cell>
-        </DataTable.Row>
-        <DataTable.Row>
           <DataTable.Cell>ZAAC002</DataTable.Cell>
-          <DataTable.Cell>Chris Columbus</DataTable.Cell>
-          <DataTable.Cell>cc@zamara.co.ke</DataTable.Cell>
-          <DataTable.Cell>HR</DataTable.Cell>
-          <DataTable.Cell>60000</DataTable.Cell>
+          <DataTable.Cell>EUROPE</DataTable.Cell>
         </DataTable.Row>
         <DataTable.Row>
           <DataTable.Cell>ZAAC003</DataTable.Cell>
-          <DataTable.Cell>Paul Mwangi</DataTable.Cell>
-          <DataTable.Cell>pm@zamara.co.ke</DataTable.Cell>
-          <DataTable.Cell>Finance</DataTable.Cell>
-          <DataTable.Cell>70000</DataTable.Cell>
+          <DataTable.Cell>ASIA</DataTable.Cell>
+        </DataTable.Row>
+        <DataTable.Row>
+          <DataTable.Cell>ZAAC003</DataTable.Cell>
+          <DataTable.Cell>AUSTRALIA</DataTable.Cell>
         </DataTable.Row>    
         </View>
         </>
@@ -56,7 +41,7 @@ const styles = StyleSheet.create({
     container: {
       flex: 1,
       width:'93%',
-      height:'90%',
+      height:'5%',
       marginTop:'1em',
       backgroundColor: 'white',
     },

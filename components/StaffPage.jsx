@@ -1,9 +1,8 @@
 import React from "react";
 import { StyleSheet, Text, View, Image } from 'react-native';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons/faBarsStaggered';
 import StaffPageDashboard from './StaffPageDashboard';
 import { useFonts } from 'expo-font';
+import Menubar from './Menubar';
 
 export default function StaffPage(){
   const [fontsLoaded] = useFonts({
@@ -14,9 +13,7 @@ export default function StaffPage(){
         <View style={styles.container}>
         <Image source={require('../assets/logo.png')} style={styles.imgstyle} />
         <br/>
-        <FontAwesomeIcon icon={ faBarsStaggered } style={styles.fontawesome} color={ 'white' } size={ 34 } />
-        <h3 style={{fontFamily: 'TsukimiRounded-medium',paddingLeft:'1em', paddingTop:'2em',position:'absolute', top:'0px',}} >Staff Page</h3>
-        <p style={{fontFamily: 'TsukimiRounded-medium', fontSize:12,fontWeight:'bold', paddingTop:'4em',paddingLeft:'2em'}} >Staff Details</p>
+        <Menubar />
         <br/><br/><br/>
         <StaffPageDashboard/>
         </View>
