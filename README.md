@@ -23,7 +23,7 @@ The Aim of the project is to build and configure a mobile App built using React 
 <!-- Installation -->
 ### :gear:<h2>Installation</h2>
 
-1.Install Learning-Projects using Yarn Install
+1.Install Learning-Projects using npm Install
 
 bash
   <p>1.npm install</p>
