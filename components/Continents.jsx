@@ -4,7 +4,7 @@ import ContinentsDashboard from './ContinentsDashboard';
 import { useFonts } from 'expo-font';
 import Menubar from './Menubar';
 
-export default function StaffPage(){
+export default function Continents(){
   const [fontsLoaded] = useFonts({
     'TsukimiRounded-Medium': require('../assets/fonts/ttf/TsukimiRounded-Medium.ttf'),
   });
