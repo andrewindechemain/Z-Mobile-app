@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, View, Image } from 'react-native';
 import ContinentsDashboard from './ContinentsDashboard';
 import { useFonts } from 'expo-font';
 import Menubar from './Menubar';
