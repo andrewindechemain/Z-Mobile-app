@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@config-plugins/detox": "^5.0.1",
     "@expo/webpack-config": "^18.0.1",
     "babel-jest": "^29.5.0",
     "detox": "^20.5.0",
