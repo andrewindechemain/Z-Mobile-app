@@ -1,10 +1,11 @@
 import React from "react";
-import { StyleSheet, View, Image } from 'react-native';
-import ContinentsDashboard from './ContinentsDashboard';
+import { StyleSheet, Text, View, Image } from 'react-native';
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons/faUser';
+import SignupDashboard from '../components/SignupDashboard';
 import { useFonts } from 'expo-font';
-import Menubar from './Menubar';
 
-export default function Continents(){
+export default function Signup(){
   const [fontsLoaded] = useFonts({
     'TsukimiRounded-Medium': require('../assets/fonts/ttf/TsukimiRounded-Medium.ttf'),
   });
@@ -13,10 +14,11 @@ export default function Continents(){
         <View style={styles.container}>
         <Image source={require('../assets/logo.png')} style={styles.imgstyle} />
         <br/>
+        <FontAwesomeIcon icon={ faUser } style={styles.fontawesome} color={ 'white' } size={ 50 } />
+        <h2 style={{fontFamily: 'TsukimiRounded-medium'}} >Welcome</h2>
+        <p style={{fontFamily: 'TsukimiRounded-medium'}} >Sign Up to continue</p>
         <br/>
-        <Menubar />
-        <br/><br/><br/>
-        <ContinentsDashboard/>
+        <SignupDashboard/>
         </View>
         </>
     );
@@ -35,16 +37,12 @@ const styles = StyleSheet.create({
         resizeMode:'contain',
         position:'absolute', 
         top:'0px',
-        marginTop:'-3em',
-        height:'10em',
-        width:'8em',
+        marginTop:'-4em',
+        height:'14em',
+        width:'14em',
       },
       fontawesome: {
-        paddingTop: '-1em',
-        paddingRight: '17em'
+        paddingTop: '8em'
       },
-      dropdown: {
-        position:'left:0'
-      }
   });
   
